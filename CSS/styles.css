@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/*---Navbar---*/
+
+.navbar {
+  display: flex;
+  height: 75px;
+  background-image: linear-gradient(to right, white 0vw, white 120px, black 60vw);
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .nav-links a, footer a, #booking-button {
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-links a:hover, footer a:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+.navbar a:first-child {
+  margin-right: auto;
+  height: 100%;
+}
+
+.nav-links a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 100px 20px 100px 20px;
+}
+
+/*This is specifically to allow the logo's <a> tag to be read by screen readers but not visible on the site*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*---Footer---*/
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #555;
+  height: 50px;
+  background-image: linear-gradient(to right, white 0vw, white 120px, black 60vw);
+  width: 100%;
+  overflow-y: hidden;
+}
+
+footer a:first-child{
+  margin-right: auto;
+  margin-left: 30px;
+  color: #000;
+}
+
+footer p{
+  margin-right: 30px;
+}
+
+/*---Pages and Content---*/
+
+main {
+  height: calc(100vh - 125px);
+  background-color: lightgray; /*remove later*/
+}
+
+.home, .contact {
+  background-image: url(/Images/Restaurant\ 3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.menu {
+  background-image: url(/Images/Food\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.home-section, .contact-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 120px;
+  max-width: 450px;
+}
+
+.home-section h2 {
+  font-size: 40px;
+  max-width: 450px;
+}
+
+.home-section p {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+#booking-button {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #FFF;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#booking-button:hover {
+  background-color: darkgray;
+}
+
+.contact {
+  background-color: purple;
+}
+
+.contact-section {
+  justify-content: center;
+  flex-wrap: wrap;
+  /*background-color: yellow; /*remove after*/
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-color: green; /*remove after*/
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.contact-header h1, .menu-header h1 {
+  font-size: 40px;
+}
+
+.contact-header p {
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  background-color: purple;
+  height: calc(100% - 125px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 12.5px 0 12.5px 0;
+}
+
+.contact-info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 100%
+}
+
+.contact-info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 100%
+}
+
+.map {
+  margin: 25px;
+}
+
+.contact-info1 p, .contact-info2 p, .contact-info1 p a, .contact-info2 p a {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact-details {
+  margin: 10px 25px 0 25px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 30px;
+}
+
+.dish {
+  font-size: 25px;
+}
+
+.description {
+  font-size: 20px;
+}
