@@ -25,11 +25,11 @@
   width: 100%;
 }
 
-.navbar .nav-links a, footer a, #booking-button {
+a {
   transition: background-color 0.2s ease;
 }
 
-.navbar .nav-links a:hover, footer a:hover {
+.navbar .nav-links a:hover, footer a:hover, .menu-links a:hover, .appetizers a:hover, .food a:hover, .desserts a:hover, .drinks a:hover {
   color: black;
   background-color: lightgray;
 }
@@ -156,10 +156,6 @@ main {
   background-color: darkgray;
 }
 
-.contact {
-  background-color: purple;
-}
-
 .contact-section {
   justify-content: center;
   flex-wrap: wrap;
@@ -171,14 +167,44 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*background-color: green; /*remove after*/
+  background-color: #000; /*remove after*/
   width: 100%;
   height: 100px;
   text-align: center;
 }
 
-.contact-header h1, .menu-header h1 {
+.contact-header h1, .menu-header h1 /*, reservations-header h1,*/ {
   font-size: 40px;
+}
+
+.hours-header h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.alerts {
+  display: flex;
+  align-items: center;
+}
+
+.alerts a {
+  font-size: 30px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.counter {
+  font-size: 16px;
 }
 
 .contact-header p, .menu-header p{
@@ -230,14 +256,39 @@ main {
 .menu h2 {
   font-size: 30px;
   padding: 30px 0 30px 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu h3 {
   font-size: 26px;
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-links {
+  background-color: rgba(0, 0, 0, 0.8); /*remove after*/
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links a {
+  padding: 10px 30px;
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .appetizers p, .food p, .desserts p, .drinks p {
   padding: 10px 0 10px 0;
+}
+
+.appetizers a, .food a, .desserts a, .drinks a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .item {
@@ -246,4 +297,12 @@ main {
 
 .description {
   font-size: 20px;
+}
+
+.hours-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #000;
 }
