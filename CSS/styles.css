@@ -93,14 +93,22 @@ main {
   position: relative;
 }
 
-.menu {
-  background-image: url(/Images/Food\ 2.jpg);
+.menu, .reservations {
   background-size: cover;
   background-position: center;
   position: relative;
   background-attachment: fixed;
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+.menu {
+  background-image: url(/Images/Food\ 2.jpg);
+}
+
+.reservations {
+  background-image: url(/Images/Restaurant\ 3.jpg);
+  text-align: center;
 }
 
 .menu-section {
@@ -162,7 +170,7 @@ main {
   /*background-color: yellow; /*remove after*/
 }
 
-.contact-header, .menu-header {
+.contact-header, .menu-header, .reservations-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +181,7 @@ main {
   text-align: center;
 }
 
-.contact-header h1, .menu-header h1 /*, reservations-header h1,*/ {
+.contact-header h1, .menu-header h1, .reservations-header h1 {
   font-size: 40px;
 }
 
@@ -207,7 +215,7 @@ main {
   font-size: 16px;
 }
 
-.contact-header p, .menu-header p{
+.contact-header p, .menu-header p, .reservations-header p {
   font-size: 14px;
 }
 
@@ -305,4 +313,18 @@ main {
   align-items: center;
   height: 100px;
   background-color: #000;
+}
+
+.reservations-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin: 20px 0;
+  width:600px;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 10px;
 }
