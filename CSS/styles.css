@@ -12,7 +12,12 @@
 .navbar {
   display: flex;
   height: 75px;
-  background-image: linear-gradient(to right, white 0vw, white 120px, black 60vw);
+  background-image: linear-gradient(
+    to right,
+    white 0vw,
+    white 120px,
+    black 60vw
+  );
   width: 100%;
   overflow-y: hidden;
 }
@@ -29,7 +34,13 @@ a {
   transition: background-color 0.2s ease;
 }
 
-.navbar .nav-links a:hover, footer a:hover, .menu-links a:hover, .appetizers a:hover, .food a:hover, .desserts a:hover, .drinks a:hover {
+.navbar .nav-links a:hover,
+footer a:hover,
+.menu-links a:hover,
+.appetizers a:hover,
+.food a:hover,
+.desserts a:hover,
+.drinks a:hover {
   color: black;
   background-color: lightgray;
 }
@@ -64,18 +75,23 @@ footer {
   align-items: center;
   background-color: #555;
   height: 50px;
-  background-image: linear-gradient(to right, white 0vw, white 120px, black 60vw);
+  background-image: linear-gradient(
+    to right,
+    white 0vw,
+    white 120px,
+    black 60vw
+  );
   width: 100%;
   overflow-y: hidden;
 }
 
-footer a:first-child{
+footer a:first-child {
   margin-right: auto;
   margin-left: 30px;
   color: #000;
 }
 
-footer p{
+footer p {
   margin-right: 30px;
 }
 
@@ -86,14 +102,22 @@ main {
   background-color: lightgray; /*remove later*/
 }
 
-.home, .contact {
-  background-image: url(/Images/Restaurant\ 3.jpg);
+.home {
+  background-image: url(/Images/homebg.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative;
 }
 
-.menu, .reservations {
+.contact {
+  background-image: url(/Images/contact.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.menu,
+.reservations {
   background-size: cover;
   background-position: center;
   position: relative;
@@ -107,15 +131,23 @@ main {
 }
 
 .reservations {
-  background-image: url(/Images/Restaurant\ 3.jpg);
+  background-image: url(/Images/reservations.jpg);
   text-align: center;
 }
 
-.menu-section {
-  background-color: rgba(0, 0, 0, 0.5);
+.hours {
+  background-image: url(/Images/hours.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
 
-.home-section, .contact-section{
+.menu-section {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-section,
+.contact-section {
   display: flex;
   height: 100%;
   width: 100%;
@@ -125,7 +157,6 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home-section {
@@ -133,31 +164,60 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: auto;
+}
+
+.content-frame {
+  min-height: 1000px;
+  background-color: grey;
+}
+
+.contact-section {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.reservations-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hours-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  /*why does this not work */
 }
 
 .home-section h1 {
-  font-size: 120px;
-  max-width: 450px;
+  font-size: 100px;
+  margin: 7.5px 0;
 }
 
 .home-section h2 {
-  font-size: 40px;
-  max-width: 450px;
+  font-size: 30px;
+  margin: 7.5px 0;
 }
 
 .home-section p {
-  font-size: 24px;
-  padding-top: 20px;
+  font-size: 20px;
+  margin: 7.5px 0;
+}
+
+.home-img {
+  border-radius: 10px;
+  margin: 7.5px 0;
 }
 
 #booking-button {
   padding: 30px;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   text-decoration: none;
   font-size: 20px;
-  margin-top: 30px;
+  margin: 7.5px 0;
 }
 
 #booking-button:hover {
@@ -167,22 +227,65 @@ main {
 .contact-section {
   justify-content: center;
   flex-wrap: wrap;
-  /*background-color: yellow; /*remove after*/
 }
 
-.contact-header, .menu-header, .reservations-header {
+.contact-header,
+.menu-header,
+.reservations-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #000; /*remove after*/
+  background-color: #000;
   width: 100%;
   height: 100px;
   text-align: center;
 }
 
-.contact-header h1, .menu-header h1, .reservations-header h1 {
+.contact-header h1,
+.menu-header h1,
+.reservations-header h1 {
   font-size: 40px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  margin: 10px 0;
+  overflow-y: auto;
+}
+
+.contact form h2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact form label {
+  font-size: 12px;
+}
+
+.contact form input {
+  height: 30px;
+  color: #000;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.contact form textarea {
+  height: 100px;
+  color: #000;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.contact form button {
+  font-size: 16px;
+  color: #000;
+  height: 30px;
+  margin: 10px 0;
 }
 
 .hours-header h1 {
@@ -215,7 +318,9 @@ main {
   font-size: 16px;
 }
 
-.contact-header p, .menu-header p, .reservations-header p {
+.contact-header p,
+.menu-header p,
+.reservations-header p {
   font-size: 14px;
 }
 
@@ -233,7 +338,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 100%
+  height: 100%;
 }
 
 .contact-info2 {
@@ -241,14 +346,17 @@ main {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 100%
+  height: 100%;
 }
 
 .map {
   margin: 25px;
 }
 
-.contact-info1 p, .contact-info2 p, .contact-info1 p a, .contact-info2 p a {
+.contact-info1 p,
+.contact-info2 p,
+.contact-info1 p a,
+.contact-info2 p a {
   text-align: center;
   font-size: 16px;
 }
@@ -287,7 +395,7 @@ main {
   text-decoration: none;
 }
 
-.menu-links figcaption { 
+.menu-links figcaption {
   font-size: 24px;
 }
 
@@ -295,11 +403,17 @@ main {
   color: #000;
 }
 
-.appetizers p, .food p, .desserts p, .drinks p {
+.appetizers p,
+.food p,
+.desserts p,
+.drinks p {
   padding: 10px 0 10px 0;
 }
 
-.appetizers a, .food a, .desserts a, .drinks a {
+.appetizers a,
+.food a,
+.desserts a,
+.drinks a {
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -322,16 +436,9 @@ main {
   background-color: #000;
 }
 
-.reservations-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .form {
   margin: 20px 0;
-  width:600px;
+  width: 600px;
   background-color: rgba(211, 211, 211, 0.8);
   border-radius: 10px;
 }
