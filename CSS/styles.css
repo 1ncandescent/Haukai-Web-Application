@@ -103,14 +103,14 @@ main {
 }
 
 .home {
-  background-image: url(/Images/homebg.jpg);
+  background-image: url(/Images/homebg.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
 }
 
 .contact {
-  background-image: url(/Images/contact.jpg);
+  background-image: url(/Images/contact.avif);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -127,16 +127,16 @@ main {
 }
 
 .menu {
-  background-image: url(/Images/Food\ 2.jpg);
+  background-image: url(/Images/menu.avif);
 }
 
 .reservations {
-  background-image: url(/Images/reservations.jpg);
+  background-image: url(/Images/reservations.avif);
   text-align: center;
 }
 
 .hours {
-  background-image: url(/Images/hours.jpg);
+  background-image: url(/Images/hours.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
