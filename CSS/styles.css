@@ -103,7 +103,7 @@ main {
 }
 
 .home {
-  background-image: url(/Images/homebg.avif);
+  background-image: url(/Images/home.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -133,6 +133,7 @@ main {
 .reservations {
   background-image: url(/Images/reservations.avif);
   text-align: center;
+  position: relative;
 }
 
 .hours {
@@ -432,7 +433,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 75px;
   background-color: #000;
 }
 
@@ -441,4 +442,8 @@ main {
   width: 600px;
   background-color: rgba(211, 211, 211, 0.8);
   border-radius: 10px;
+}
+
+.calendar {
+  background-color: green; /*remover after*/
 }
