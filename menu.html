@@ -7,7 +7,7 @@
     <title>The Haukai Restaurant</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar">
+    <nav role="navigation" id="navbar" class="navbar">
       <ul>
         <a href="index.html" aria-label="Home">
           <img
@@ -34,62 +34,60 @@
         </li>
       </ul>
     </nav>
-    <main class="menu">
+    <main role="main" class="menu">
       <section class="menu-section">
-        <section class="menu-header" id="menu-top">
+        <section class="menu-header" id="menu-top" tabindex="0">
           <h1>Menus</h1>
-          <p>
-            View all of the food and beverage options available at Haukai
-          </p>
+          <p>View all of the food and beverage options available at Haukai</p>
         </section>
         <section class="menu-links">
-          <a href="#appetizers">
+          <a href="#appetizers" aria-label="Appetizer Menu">
             <figure>
-              <img 
-                src="Images/appetizers.jpeg" 
+              <img
+                src="Images/appetizers.jpeg"
                 alt="Rewena (M&amacr;ori bread)"
                 height="100px"
                 width="100px"
-              >
+              />
               <figcaption>Appetizers</figcaption>
-            </figure>            
+            </figure>
           </a>
-          <a href="#food">
+          <a href="#food" aria-label="Main dishes menu">
             <figure>
-              <img 
-                src="Images/main.jpg" 
+              <img
+                src="Images/main.jpg"
                 alt="Beer battered fish with kumara fries"
                 height="100px"
                 width="100px"
-              >
+              />
               <figcaption>Main</figcaption>
             </figure>
           </a>
-          <a href="#desserts">
+          <a href="#desserts" aria-label="Dessert menu">
             <figure>
-              <img 
-                src="Images/desserts.jpg" 
+              <img
+                src="Images/desserts.jpg"
                 alt="Kapiti ice cream"
                 height="100px"
                 width="100px"
-              >
+              />
               <figcaption>Desserts</figcaption>
             </figure>
           </a>
-          <a href="#drinks">
+          <a href="#drinks" aria-label="Drinks menu">
             <figure>
-              <img 
-                src="Images/drinks.jpg" 
+              <img
+                src="Images/drinks.jpg"
                 alt="Beer and wine"
                 height="100px"
                 width="100px"
-              >
+              />
               <figcaption>Drinks</figcaption>
             </figure>
           </a>
         </section>
         <section class="appetizers" id="appetizers">
-          <h2>Appetizers</h2>
+          <h2 tabindex="0">Appetizers</h2>
           <ul>
             <li>
               <p class="item">REWENA BREAD 10</p>
@@ -97,59 +95,89 @@
             </li>
             <li>
               <p class="item">PAUA FRITTER 16</p>
-              <p class="description">Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+              <p class="description">
+                Finely diced pieces of paua, served with a side salad and
+                horopito dressing.
+              </p>
             </li>
             <li>
               <p class="item">RAW FISH 20</p>
-              <p class="description">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+              <p class="description">
+                Dried snapper fish marinated in coconut cream, served with
+                tomatoes and spring onions.
+              </p>
             </li>
             <li>
               <p class="item">POACHED SALMON 22</p>
-              <p class="description">Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
+              <p class="description">
+                Salmon poached in an orange and pistachio glaze, served with
+                rewena bread.
+              </p>
             </li>
             <li>
               <p class="item">SEAFOOD BASKET 25</p>
-              <p class="description">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+              <p class="description">
+                Crumbed mussels, salt and pepper squid, crumbed hoki bites and
+                garlic prawns.
+              </p>
             </li>
           </ul>
-          <a href="#menu-top" data-scroll-margin="0">Return to top of page</a>
+          <a href="#menu-top" aria-label="Return to top of page">Return to top of page</a>
         </section>
         <section class="food" id="food">
-          <h2>Main</h2>
+          <h2 tabindex="0">Main</h2>
           <ul>
             <li>
               <p class="item">FISH OF THE DAY 25</p>
-              <p class="description">Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+              <p class="description">
+                Beer-battered fish and kumara fries, served with a side salad
+                and homemade tartare.
+              </p>
             </li>
             <li>
               <p class="item">MUSSELS AND SCALLOPS 25</p>
-              <p class="description">Steamed mussel & scallop mousse, honey and soy broth.</p>
+              <p class="description">
+                Steamed mussel & scallop mousse, honey and soy broth.
+              </p>
             </li>
             <li>
               <p class="item">SEAFOOD CHOWDER 30</p>
-              <p class="description">Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+              <p class="description">
+                Creamy chowder filled with tarakihi, prawn, hoki, scallops and
+                mussels, served with flatbread.
+              </p>
             </li>
             <li>
               <p class="item">PORK BELLY 30</p>
               <p class="description"></p>
             </li>
             <li>
-              <p class="item">Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</p>
+              <p class="item">
+                Slow-cooked pork belly served on a bed of apple slaw with
+                roasted kumara and crispy noodles.
+              </p>
               <p class="description"></p>
             </li>
             <li>
               <p class="item">LAMB STEAK 33</p>
-              <p class="description">New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut squash and mushroom jus.</p>
+              <p class="description">
+                New Zealand lamb coated in a kawakawa crumb, served with
+                Dijon-mustard-glazed carrots, roasted butternut squash and
+                mushroom jus.
+              </p>
             </li>
             <li>
               <p class="item">VENISON 33</p>
-              <p class="description">Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</p>
+              <p class="description">
+                Venison crusted with Horopito, served with glazed plums, cabbage
+                salad and red wine jus.
+              </p>
             </li>
           </ul>
-          <a href="#menu-top">Return to top of page</a>
+          <a href="#menu-top" aria-label="Return to top of page">Return to top of page</a>
         </section>
         <section class="desserts" id="desserts">
-          <h2>Desserts</h2>
+          <h2 tabindex="0">Desserts</h2>
           <ul>
             <li>
               <p class="item">KAPITI ICE CREAM 10</p>
@@ -157,23 +185,28 @@
             </li>
             <li>
               <p class="item">STEAMED PUDDING 12</p>
-              <p class="description">Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</p>
+              <p class="description">
+                Golden-syrup-flavoured steamed pudding, served with vanilla ice
+                cream.
+              </p>
             </li>
             <li>
               <p class="item">MINI PAVLOVA 16</p>
-              <p class="description">Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</p>
+              <p class="description">
+                Mini pavlova, served with kawakawa and lemon-infused cream and
+                fresh fruit.
+              </p>
             </li>
             <li>
               <p class="item">BANOFFEE PIE 16</p>
               <p class="description">Toffee, fresh bananas and fresh cream.</p>
             </li>
           </ul>
-          <a href="#menu-top">Return to top of page</a>
+          <a href="#menu-top" aria-label="Return to top of page">Return to top of page</a>
         </section>
         <section class="drinks" id="drinks">
-          <h2>Drinks</h2>
+          <h2 tabindex="0">Drinks</h2>
           <h3>Red</h3>
-          <!--Remove drink class and update eac hdrink with a p tag entry-->
           <ul class="red-wine">
             <li>
               <p class="item">Terrace Edge Pinot Noir, 2012, Wairarapa 53/13</p>
@@ -200,7 +233,7 @@
               <p class="item">Pegasus Bay Pinot Noir, 2013, Waipara 110/-</p>
             </li>
           </ul>
-          <h3>White</h3>
+          <h3 tabindex="0" tabindex="0">White</h3>
           <ul class="white-wine">
             <li>
               <p class="item">Spade Oak Pinot Gris, 2011, Gisborne 40/10</p>
@@ -218,16 +251,20 @@
               <p class="item">Lamont Riesling, 2010, Otago 57/13</p>
             </li>
             <li>
-              <p class="item">Elephant Hill Viognier, 2013, Hawke's Bay 55/12</p>
+              <p class="item">
+                Elephant Hill Viognier, 2013, Hawke's Bay 55/12
+              </p>
             </li>
             <li>
-              <p class="item">Folium Sauvignon Blanc, 2011, Marlborough 52/11</p>
+              <p class="item">
+                Folium Sauvignon Blanc, 2011, Marlborough 52/11
+              </p>
             </li>
             <li>
               <p class="item">Billecart-Salmon Brut Reserve, France 120</p>
             </li>
           </ul>
-          <h3>Beer & Cider</h3>
+          <h3 tabindex="0">Beer & Cider</h3>
           <ul class="beer-cider">
             <li>
               <p class="item">Garage project range 11</p>
@@ -251,7 +288,7 @@
               <p class="item">Crooked cider 10</p>
             </li>
           </ul>
-          <h3>Non-Alcoholic</h3>
+          <h3 tabindex="0">Non-Alcoholic</h3>
           <ul class="non-alcoholic">
             <li><p class="item">Mineral water 4.00</p></li>
             <li><p class="item">Soft drinks 4.00</p></li>
@@ -259,11 +296,11 @@
             <li><p class="item">Coffee 4.50</p></li>
             <li><p class="item">Tea 3.50</p></li>
           </ul>
-          <a href="#menu-top">Return to top of page</a>
+          <a href="#menu-top" aria-label="Return to top of page">Return to top of page</a>
         </section>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <a href="hours.html" aria-label="Employee Portal Login"
         >Employee Portal Login</a
       >

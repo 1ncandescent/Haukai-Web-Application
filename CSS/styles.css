@@ -187,8 +187,17 @@ main {
 }
 
 .hours-section {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7);
-  /*why does this not work */
+  height: 100%;
+  width: 100%;
+}
+
+.hours-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-section h1 {
@@ -444,6 +453,28 @@ main {
   border-radius: 10px;
 }
 
+.calendar, .shifts, .request-leave {
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+
 .calendar {
-  background-color: green; /*remover after*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green; /*remove after*/
+  height: 300px;
+  width: 500px;
+}
+
+.shifts {
+  height: 100px;
+  width: 500px;
+  background-color: yellow; /*remove after*/
+}
+
+.request-leave {
+  height: 410px;
+  width: 300px;
+  background-color: red; /*remove after*/
 }

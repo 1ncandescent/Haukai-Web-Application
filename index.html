@@ -7,18 +7,18 @@
     <title>The Haukai Restaurant</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar">
+    <nav role="navigation" id="navbar" class="navbar">
       <ul>
         <a href="index.html" aria-label="Home">
-            <img
-              id="logo"
-              class="logo"
-              src="Images/haukai.svg"
-              alt="The Haukai Restaurant Logo"
-              height="75px"
-              width="90px"
-            />
-            <span class="visually-hidden">Logo/Home</span>
+          <img
+            id="logo"
+            class="logo"
+            src="Images/haukai.svg"
+            alt="The Haukai Restaurant Logo"
+            height="75px"
+            width="90px"
+          />
+          <span class="visually-hidden">Logo/Home</span>
         </a>
         <li class="nav-links">
           <a href="index.html" aria-label="Home">Home</a>
@@ -34,26 +34,32 @@
         </li>
       </ul>
     </nav>
-    <main class="home">
+    <main role="main" class="home">
       <section class="home-section">
         <section class="home-header">
-            <h1>Kia ora</h1>
-            <h2>Welcome to The Haukai</h2>
+          <h1>Kia ora</h1>
+          <h2>Welcome to The Haukai</h2>
         </section>
-          <figure>
-            <img 
-              src="Images/restaurant.jpg" 
-              alt="Haukai restaurant interior"
-              height="150px"
-              width="150px"
-              class="home-img"
-            >
-          </figure>
+        <figure>
+          <img
+            src="Images/restaurant.jpg"
+            alt="Haukai restaurant interior"
+            height="150px"
+            width="150px"
+            class="home-img"
+          />
+        </figure>
         <p>Experience the finest traditional kai that Aotearoa has to offer</p>
-        <a id="booking-button" href="reservations.html" aria-label="Make a reservation!">Make a reservation!</a>
+        <a
+          id="booking-button"
+          href="reservations.html"
+          aria-label="Make a reservation!"
+          role="button"
+          >Make a reservation!</a
+        >
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <a href="hours.html" aria-label="Employee Portal Login"
         >Employee Portal Login</a
       >

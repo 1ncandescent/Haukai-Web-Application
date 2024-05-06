@@ -7,18 +7,18 @@
     <title>The Haukai Restaurant</title>
   </head>
   <body>
-    <nav id="navbar" class="navbar">
+    <nav role="navigation" id="navbar" class="navbar">
       <ul>
         <a href="index.html" aria-label="Home">
-            <img
-              id="logo"
-              class="logo"
-              src="Images/haukai.svg"
-              alt="The Haukai Restaurant Logo"
-              height="75px"
-              width="90px"
-            />
-            <span class="visually-hidden">Logo/Home</span>
+          <img
+            id="logo"
+            class="logo"
+            src="Images/haukai.svg"
+            alt="The Haukai Restaurant Logo"
+            height="75px"
+            width="90px"
+          />
+          <span class="visually-hidden">Logo/Home</span>
         </a>
         <li class="nav-links">
           <a href="index.html" aria-label="Home">Home</a>
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </nav>
-    <main class="hours">
+    <main role="main" class="hours">
       <section class="hours-section">
         <section class="hours-header">
           <h1>Kia ora, Michael</h1>
@@ -45,21 +45,28 @@
             <a href="#" aria-label="Alerts">Alerts</a>
           </div>
         </section>
-        <section class="calendar">
-          <iframe 
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342" 
-            style="border-width:0" 
-            width="800" 
-            height="600" 
-            frameborder="0" 
-            scrolling="no">
-          </iframe>
+        <section class="hours-content">
+          <section class="hours-left">
+            <section class="calendar">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
+                style="border-width: 0"
+                width="450"
+                height="250"
+                frameborder="0"
+                scrolling="no"
+              >
+              </iframe>
+            </section>
+            <section class="shifts"></section>
+          </section>
+          <section class="hours-right">
+            <section class="request-leave"></section>
+          </section>
         </section>
-        <section class="shifts"></section>
-        <section class="request-leave"></section>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <a href="hours.html" aria-label="Employee Portal Login"
         >Employee Portal Login</a
       >
