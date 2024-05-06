@@ -22,12 +22,15 @@
   overflow-y: hidden;
 }
 
+.navbar a {
+  margin-right: auto;
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
   height: 100%;
   align-items: center;
-  width: 100%;
 }
 
 a {
@@ -43,11 +46,6 @@ footer a:hover,
 .drinks a:hover {
   color: black;
   background-color: lightgray;
-}
-
-.navbar a:first-child {
-  margin-right: auto;
-  height: 100%;
 }
 
 .nav-links a {
@@ -187,17 +185,8 @@ main {
 }
 
 .hours-section {
-  display: flex;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-}
-
-.hours-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /*why does this not work */
 }
 
 .home-section h1 {
@@ -459,22 +448,5 @@ main {
 }
 
 .calendar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green; /*remove after*/
-  height: 300px;
-  width: 500px;
-}
-
-.shifts {
-  height: 100px;
-  width: 500px;
-  background-color: yellow; /*remove after*/
-}
-
-.request-leave {
-  height: 410px;
-  width: 300px;
-  background-color: red; /*remove after*/
+  background-color: green; /*remover*/
 }
