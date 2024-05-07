@@ -16,6 +16,7 @@
       content="Haukai Restaurant, traditional kai, Aotearoa cuisine, dining experience, New Zealand, Maori culture, restaurant"
     />
     <meta name="robots" content="index, follow" />
+    <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
   </head>
 
   <body>
@@ -54,13 +55,15 @@
             <div class="notification">
               <p class="counter">1</p>
             </div>
-            <a href="#" aria-label="Alerts">Alerts</a>
+            <a href="#" aria-label="Alerts">Alerts</a> <!--Requires JS for functionality-->
           </div>
         </section>
         <section class="hours-content">
           <section class="hours-left">
             <section class="request-leave">
               <iframe
+                title="Leave request form"
+                class="leave-form"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSd7gPoX6LgX3ftqwdKzz-ctOdhh4KunpBtKE9ao_cLPvjEkGA/viewform?embedded=true"
                 width="320"
                 height="190"
@@ -91,6 +94,7 @@
           <section class="hours-right">
             <section class="calendar">
               <iframe
+                title="Employee schedule"
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
                 style="border-width: 0"
                 width="700"

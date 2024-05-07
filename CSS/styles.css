@@ -517,3 +517,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.leave-form {
+  background-color: white;
+}
