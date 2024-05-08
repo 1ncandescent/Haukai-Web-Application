@@ -562,11 +562,8 @@ main {
     height: calc(100vh - 150px)
   }
 
-  footer {
-    justify-content: space-between;}
-
   footer a:first-child {
-    margin-right: 0;
+    margin-right: 50vw;
   }
 }
 
