@@ -534,6 +534,9 @@ main {
   .logo {
     height: 50px;
     width: 60px;
+  }
+
+  .navbar a {
     margin: 0;
   }
 
