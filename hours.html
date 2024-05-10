@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
     <title>
       The Haukai Restaurant - Experience traditional kai in Aotearoa
     </title>
@@ -49,7 +50,7 @@
     </nav>
     <main role="main" class="hours">
       <section class="hours-section">
-        <section class="hours-header">
+        <section class="hours-header" id="hours-top">
           <h1>Kia ora, <span id="username">Amelia</span></h1>
           <div class="alerts">
             <div class="notification">
@@ -58,7 +59,7 @@
             <a href="#" aria-label="Alerts">Alerts</a> <!--Requires JS for functionality-->
           </div>
         </section>
-        <section class="mobile-only">
+        <section class="mobile-only link-1">
           <a href="#calendar">Tap here or scroll down to view the calendar for all shifts</a>
         </section>
         <section class="hours-content">
@@ -106,6 +107,9 @@
                 scrolling="no"
               >
               </iframe>
+            </section>
+            <section class="mobile-only link-2">
+              <a href="#hours-top">Tap here to return to top of page</a>
             </section>
           </section>
         </section>

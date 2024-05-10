@@ -83,6 +83,10 @@ footer {
   overflow-y: hidden;
 }
 
+footer a, footer p {
+  font-size: 12px;
+}
+
 footer a:first-child {
   margin-right: auto;
   margin-left: 30px;
@@ -546,7 +550,6 @@ main {
     align-items: center;
   }
 
-
   .logo {
     height: 50px;
     width: 60px;
@@ -572,8 +575,12 @@ main {
     height: calc(100vh - 150px)
   }
 
+  footer {
+    justify-content: space-between;
+  }
+
   footer a:first-child {
-    margin-right: 50vw;
+    margin-right: 30vw;
   }
 
   /*Menu Page rules*/
@@ -634,7 +641,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 640px);
+  }
+
+  .link-1 {
+    height: calc(100vh - 635px);
+    width: auto;
+  }
+
+  .link-2 {
+    height: 75px;
     width: auto;
   }
 
@@ -675,7 +690,7 @@ main {
   }
 
   .calendar {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 225px);
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -683,7 +698,7 @@ main {
 
   .calendar iframe {
     width: 350px;
-    height:calc(100vh - 155px) ; /*660px*/
+    height:calc(100vh - 230px) ; /*660px*/
     margin:0;
     padding: 10px 0;
   }
