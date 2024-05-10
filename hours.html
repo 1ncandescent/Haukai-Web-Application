@@ -1,125 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
-    <title>
-      The Haukai Restaurant - Experience traditional kai in Aotearoa
-    </title>
-    <meta
-      name="description"
-      content="Experience the finest traditional kai that Aotearoa has to offer at The Haukai Restaurant. Explore our menu and make reservations online. Experience Aotearoa, experience Haukai."
-    />
-    <meta
-      name="keywords"
-      content="Haukai Restaurant, traditional kai, Aotearoa cuisine, dining experience, New Zealand, Maori culture, restaurant"
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
-  </head>
 
-  <body>
-    <nav role="navigation" id="navbar" class="navbar">
-      <a href="index.html" aria-label="Home">
-        <img
-          id="logo"
-          class="logo"
-          src="Images/haukai.svg"
-          alt="The Haukai Restaurant Logo"
-          height="75px"
-          width="90px"
-        />
-        <span class="visually-hidden">Logo/Home</span>
-      </a>
-      <ul>
-        <li class="nav-links">
-          <a href="index.html" aria-label="Home">Home</a>
-        </li>
-        <li class="nav-links">
-          <a href="menu.html" aria-label="Menu">Menu</a>
-        </li>
-        <li class="nav-links">
-          <a href="reservations.html" aria-label="Reservations">Reservations</a>
-        </li>
-        <li class="nav-links">
-          <a href="contact.html" aria-label="Contact Us">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <main role="main" class="hours">
-      <section class="hours-section">
-        <section class="hours-header" id="hours-top">
-          <h1>Kia ora, <span id="username">Amelia</span></h1>
-          <div class="alerts">
-            <div class="notification">
-              <p class="counter">1</p>
-            </div>
-            <a href="#" aria-label="Alerts">Alerts</a> <!--Requires JS for functionality-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
+  <title>
+    The Haukai Restaurant - Experience traditional kai in Aotearoa
+  </title>
+  <meta name="description"
+    content="Experience the finest traditional kai that Aotearoa has to offer at The Haukai Restaurant. Explore our menu and make reservations online. Experience Aotearoa, experience Haukai.">
+  <meta name="keywords"
+    content="Haukai Restaurant, traditional kai, Aotearoa cuisine, dining experience, New Zealand, Maori culture, restaurant">
+  <meta name="robots" content="index, follow">
+  <link rel="preload" fetchpriority="high" as="image" href="/Images/hours.avif" type="image/avif">
+</head>
+
+<body>
+  <nav id="navbar" class="navbar">
+    <a href="index.html" aria-label="Home">
+      <img id="logo" class="logo" src="Images/haukai.svg" alt="The Haukai Restaurant Logo" height="75" width="90">
+      <span class="visually-hidden">Logo/Home</span>
+    </a>
+    <ul>
+      <li class="nav-links">
+        <a href="index.html" aria-label="Home">Home</a>
+      </li>
+      <li class="nav-links">
+        <a href="menu.html" aria-label="Menu">Menu</a>
+      </li>
+      <li class="nav-links">
+        <a href="reservations.html" aria-label="Reservations">Reservations</a>
+      </li>
+      <li class="nav-links">
+        <a href="contact.html" aria-label="Contact Us">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="hours">
+    <div class="hours-section">
+      <section class="hours-header" id="hours-top">
+        <h1>Kia ora, <span id="username">Amelia</span></h1>
+        <div class="alerts">
+          <div class="notification">
+            <p class="counter">1</p>
           </div>
-        </section>
-        <section class="mobile-only link-1">
-          <a href="#calendar">Tap here or scroll down to view the calendar for all shifts</a>
-        </section>
-        <section class="hours-content">
-          <section class="hours-left">
-            <section class="request-leave">
-              <iframe
-                title="Leave request form"
-                class="leave-form"
-                src="https://docs.google.com/forms/d/e/1FAIpQLSd7gPoX6LgX3ftqwdKzz-ctOdhh4KunpBtKE9ao_cLPvjEkGA/viewform?embedded=true"
-                width="320"
-                height="190"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                >Loading…</iframe
-              >
-            </section>
-            <section class="shifts">
-              <section class="shifts-header header">
-                <h2>My weekly shifts</h2>
-              </section>
-              <section class="timetable">
-                <ul class="days">
-                  <li>Thursday</li>
-                  <li>Friday</li>
-                  <li>Saturday</li> 
-                </ul>
-                <ul class="times">
-                  <li>4:30pm - 9:30pm</li>
-                  <li>4:30pm - 9:30pm</li>
-                  <li>4:30pm - 9:30pm</li>
-                </ul>
-              </section>
-            </section>
-          </section>
-          <section class="hours-right">
-            <section class="calendar" id="calendar">
-              <iframe
-                title="Employee schedule"
-                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
-                style="border-width: 0"
-                width="700"
-                height="370"
-                frameborder="0"
-                scrolling="no"
-              >
-              </iframe>
-            </section>
-            <section class="mobile-only link-2">
-              <a href="#hours-top">Tap here to return to top of page</a>
-            </section>
-          </section>
-        </section>
+          <a href="#" aria-label="Alerts">Alerts</a> <!--Requires JS for functionality-->
+        </div>
       </section>
-    </main>
-    <footer role="contentinfo">
-      <a href="hours.html" aria-label="Employee Portal Login"
-        >Employee Portal Login</a
-      >
-      <p>&copy; The Haukai Restaurant 2024, All rights reserved.</p>
-    </footer>
-  </body>
+      <div class="mobile-only link-1">
+        <a href="#calendar">Tap here or scroll down to view the calendar for all shifts</a>
+      </div>
+      <div class="hours-content">
+        <div class="hours-left">
+          <div class="request-leave">
+            <iframe title="Leave request form" class="leave-form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSd7gPoX6LgX3ftqwdKzz-ctOdhh4KunpBtKE9ao_cLPvjEkGA/viewform?embedded=true"
+              width="320" height="190" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+          <div class="shifts">
+            <section class="shifts-header header">
+              <h2>My weekly shifts</h2>
+            </section>
+            <div class="timetable">
+              <ul class="days">
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+              </ul>
+              <ul class="times">
+                <li>4:30pm - 9:30pm</li>
+                <li>4:30pm - 9:30pm</li>
+                <li>4:30pm - 9:30pm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hours-right">
+          <div class="calendar" id="calendar">
+            <iframe title="Employee schedule"
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
+              style="border-width: 0" width="700" height="370" frameborder="0" scrolling="no">
+            </iframe>
+          </div>
+          <div class="mobile-only link-2">
+            <a href="#hours-top">Tap here to return to top of page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="hours.html" aria-label="Employee Portal Login">Employee Portal Login</a>
+    <p>&copy; The Haukai Restaurant 2024, All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
