@@ -449,6 +449,12 @@ main {
   border-radius: 10px;
 }
 
+.form iframe, .map, .calendar iframe, .leave-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hours-content {
   display: flex;
   justify-content: center;
