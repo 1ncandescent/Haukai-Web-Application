@@ -294,6 +294,10 @@ main {
   margin-left: 20px;
 }
 
+#username {
+  font-size: 50px;
+}
+
 .alerts {
   display: flex;
   align-items: center;
@@ -439,7 +443,7 @@ main {
 
 .form {
   margin: 20px 0;
-  width: 600px;
+  width: 400px;
   background-color: rgba(211, 211, 211, 0.8);
   border-radius: 10px;
 }
@@ -448,6 +452,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mobile-only {
+  display: none;
 }
 
 .hours-left {
@@ -522,7 +530,9 @@ main {
 }
 
 @media screen and (max-width: 575.98px) {
-  /* CSS rules for extra small devices (phones) */
+
+  /*Genral layout & home rules*/
+
   .navbar {
     height: 100px;
     flex-direction: column;
@@ -565,20 +575,116 @@ main {
   footer a:first-child {
     margin-right: 50vw;
   }
-}
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  /* CSS rules for small devices (tablets) */
-}
+  /*Menu Page rules*/
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  /* CSS rules for medium devices (laptops and desktops) */
-}
+  .menu-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    height: calc(100vh - 250px); /*310px*/
+    padding-bottom: calc(100vh - 560px);
+  }
 
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {
-  /* CSS rules for large devices (desktops) */
-}
+  .grid-items {
+    padding: 20px;
+  }
 
-@media screen and (min-width: 1200px) {
-  /* CSS rules for extra large devices (large desktops and TVs) */
+  .item {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  /*Reservations rules*/
+
+  .form {
+    width: auto;
+  }
+
+  .form iframe {
+    width: 350px;
+    margin: 0;
+  }
+
+  /*Contact rules*/
+
+  .contact-info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /*Hours rules*/
+
+  .hours-header {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .hours-header h1 {
+    font-size: 25px;
+  }
+
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 640px);
+    width: auto;
+  }
+
+  .mobile-only a {
+    width: 280px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #username {
+    display: block;
+    font-size: 25px;
+    width: auto;
+  }
+
+  .alerts a {
+    font-size: 30px;
+  }
+
+  .alerts a {
+    font-size: 30px;
+    margin: 0 20px;
+  }
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  .hours-content {
+    flex-direction: column;
+  }
+
+  .calendar {
+    height: calc(100vh - 150px);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
+  .calendar iframe {
+    width: 350px;
+    height:calc(100vh - 155px) ; /*660px*/
+    margin:0;
+    padding: 10px 0;
+  }
 }

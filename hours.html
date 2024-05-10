@@ -50,13 +50,16 @@
     <main role="main" class="hours">
       <section class="hours-section">
         <section class="hours-header">
-          <h1>Kia ora, Amelia</h1>
+          <h1>Kia ora, <span id="username">Amelia</span></h1>
           <div class="alerts">
             <div class="notification">
               <p class="counter">1</p>
             </div>
             <a href="#" aria-label="Alerts">Alerts</a> <!--Requires JS for functionality-->
           </div>
+        </section>
+        <section class="mobile-only">
+          <a href="#calendar">Tap here or scroll down to view the calendar for all shifts</a>
         </section>
         <section class="hours-content">
           <section class="hours-left">
@@ -92,7 +95,7 @@
             </section>
           </section>
           <section class="hours-right">
-            <section class="calendar">
+            <section class="calendar" id="calendar">
               <iframe
                 title="Employee schedule"
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&bgcolor=%23ffffff&title=Employee%20Schedule&hl=en_GB&src=N2NjMGM2MTE2YjEzNTgxMDdmZmE1ZTE5Y2IyZjAxZDc2MzJkZDJiMjM5MTU2ZGQxNjhiZjdlODczOTg2YmMxYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
