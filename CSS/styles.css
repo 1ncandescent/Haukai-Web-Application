@@ -100,14 +100,14 @@ main {
 }
 
 .home {
-  background-image: url(/Images/home.avif);
+  background-image: url(../Images/home.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
 }
 
 .contact {
-  background-image: url(/Images/contact.avif);
+  background-image: url(../Images/contact.avif);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -124,17 +124,17 @@ main {
 }
 
 .menu {
-  background-image: url(/Images/menu.avif);
+  background-image: url(../Images/menu.avif);
 }
 
 .reservations {
-  background-image: url(/Images/reservations.avif);
+  background-image: url(../Images/reservations.avif);
   text-align: center;
   position: relative;
 }
 
 .hours {
-  background-image: url(/Images/hours.avif);
+  background-image: url(../Images/hours.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
