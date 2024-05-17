@@ -12,12 +12,10 @@
 .navbar {
   display: flex;
   height: 75px;
-  background-image: linear-gradient(
-    to right,
-    white 0vw,
-    white 120px,
-    black 60vw
-  );
+  background-image: linear-gradient(to right,
+      white 0vw,
+      white 120px,
+      black 60vw);
   width: 100%;
   overflow-y: hidden;
 }
@@ -62,7 +60,6 @@ footer a:hover,
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -73,14 +70,17 @@ footer {
   align-items: center;
   background-color: #555;
   height: 50px;
-  background-image: linear-gradient(
-    to right,
-    white 0vw,
-    white 120px,
-    black 60vw
-  );
+  background-image: linear-gradient(to right,
+      white 0vw,
+      white 120px,
+      black 60vw);
   width: 100%;
   overflow-y: hidden;
+}
+
+footer a,
+footer p {
+  font-size: 12px;
 }
 
 footer a:first-child {
@@ -100,14 +100,14 @@ main {
 }
 
 .home {
-  background-image: url(/Images/home.avif);
+  background-image: url(../Images/home.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
 }
 
 .contact {
-  background-image: url(/Images/contact.avif);
+  background-image: url(../Images/contact.avif);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -124,17 +124,17 @@ main {
 }
 
 .menu {
-  background-image: url(/Images/menu.avif);
+  background-image: url(../Images/menu.avif);
 }
 
 .reservations {
-  background-image: url(/Images/reservations.avif);
+  background-image: url(../Images/reservations.avif);
   text-align: center;
   position: relative;
 }
 
 .hours {
-  background-image: url(/Images/hours.avif);
+  background-image: url(../Images/hours.avif);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -186,7 +186,7 @@ main {
 
 .hours-section {
   background-color: rgba(0, 0, 0, 0.7);
-  height:100%;
+  height: 100%;
   width: 100%;
   overflow-y: auto;
 }
@@ -448,6 +448,12 @@ main {
   border-radius: 10px;
 }
 
+.form iframe, .map, .calendar iframe, .leave-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hours-content {
   display: flex;
   justify-content: center;
@@ -462,7 +468,9 @@ main {
   display: block;
 }
 
-.calendar, .shifts, .request-leave {
+.calendar,
+.shifts,
+.request-leave {
   border-radius: 10px;
   margin: 10px 5px;
 }
@@ -504,7 +512,8 @@ main {
   margin: 10px 0;
 }
 
-.days, .times {
+.days,
+.times {
   list-style: none;
 }
 
@@ -536,16 +545,13 @@ main {
   .navbar {
     height: 100px;
     flex-direction: column;
-    background-image: linear-gradient(
-    to right,
-    #000 0vw,
-    #FFF 40vw,
-    #FFF 60vw,
-    #000 100vw
-  );
+    background-image: linear-gradient(to right,
+        #000 0vw,
+        #FFF 40vw,
+        #FFF 60vw,
+        #000 100vw);
     align-items: center;
   }
-
 
   .logo {
     height: 50px;
@@ -565,15 +571,19 @@ main {
 
   .nav-links a {
     font-size: 15px;
-    padding: 25px auto;
+    display: block;
   }
 
   main {
     height: calc(100vh - 150px)
   }
 
+  footer {
+    justify-content: space-between;
+  }
+
   footer a:first-child {
-    margin-right: 50vw;
+    margin-right: 30vw;
   }
 
   /*Menu Page rules*/
@@ -583,7 +593,8 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: center;
-    height: calc(100vh - 250px); /*310px*/
+    height: calc(100vh - 250px);
+    /*310px*/
     padding-bottom: calc(100vh - 560px);
   }
 
@@ -595,7 +606,7 @@ main {
     font-size: 22px;
     margin: 0 10px;
   }
-  
+
   .description {
     font-size: 18px;
     margin: 0 10px;
@@ -634,7 +645,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 640px);
+  }
+
+  .link-1 {
+    height: calc(100vh - 635px);
+    width: auto;
+  }
+
+  .link-2 {
+    height: 75px;
     width: auto;
   }
 
@@ -659,7 +678,7 @@ main {
     font-size: 30px;
     margin: 0 20px;
   }
-  
+
   .notification {
     display: flex;
     align-items: center;
@@ -675,7 +694,7 @@ main {
   }
 
   .calendar {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 225px);
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -683,8 +702,9 @@ main {
 
   .calendar iframe {
     width: 350px;
-    height:calc(100vh - 155px) ; /*660px*/
-    margin:0;
+    height: calc(100vh - 230px);
+    /*660px*/
+    margin: 0;
     padding: 10px 0;
   }
 }
